@@ -27,6 +27,11 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
                 <Button startIcon="settings">Settings</Button>
                 <Button startIcon="favorite">Favorite</Button>
             </div>
+            <div className="row g-2 flex-wrap align-items-end">
+                <Button size="sm">Small</Button>
+                <Button size="md">Medium</Button>
+                <Button size="lg">Large</Button>
+            </div>
         </div>
     );
 }

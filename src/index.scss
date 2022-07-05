@@ -6,13 +6,10 @@
 .column { display:  flex; flex-direction: column; }
 .flex-wrap { flex-wrap: wrap; }
 @for $count from 1 to 12 {
-  .g-#{$count} {
-    gap: $count * 0.5rem;
-  }
-  .p-#{$count} {
-    padding: $count * 0.5rem;
-  }
+  .g-#{$count} { gap: $count * 0.5rem; }
+  .p-#{$count} { padding: $count * 0.5rem; }
 }
+.align-items-end { align-items: flex-end; }
 
 
 body {

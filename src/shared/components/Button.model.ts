@@ -4,9 +4,11 @@ export interface ButtonProps {
     disabled?: boolean;
     startIcon?: Icon;
     endIcon?: Icon;
+    size?: Sizes;
 }
 
 type ButtonVariant = "default" | "text" | "outlined";
+type Sizes = "sm" | "md" | "lg";
 
 type Icon = keyof IMaterialIcons;
 

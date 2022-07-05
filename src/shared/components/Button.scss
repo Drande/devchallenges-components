@@ -7,8 +7,12 @@ button {
     background-color: #E0E0E0;
     border: none;
     width: min-content;
+    height: min-content;
     color: #3F3F3F;
     white-space: nowrap;
+    &.sm { padding: 6px 14px; }
+    &.md { padding: 8px 16px; }
+    &.lg { padding: 11px 22px; }
     .material-icons {
         font-size: 14px;
         vertical-align: middle;
@@ -26,7 +30,9 @@ button {
         color: #9E9E9E;
     }
     &.outlined {
-        padding: 6px 14px;
+        &.md { padding: 6px 14px; }
+        &.sm { padding: 4px 12px; }
+        &.lg { padding: 9px 20px; }
         border: 1px solid #3F3F3F;
     }
     &.text {

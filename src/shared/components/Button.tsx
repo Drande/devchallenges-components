@@ -2,11 +2,12 @@ import React from "react";
 import { ButtonProps } from "./Button.model";
 import './Button.scss';
 
-const Button = ({ children, variant="default", disableShadow, disabled, startIcon, endIcon }: React.PropsWithChildren<ButtonProps>) => {
+const Button = ({ children, variant="default", disableShadow, disabled, startIcon, endIcon, size="md" }: React.PropsWithChildren<ButtonProps>) => {
     const finalClassname = [
         variant,
         disableShadow ? "" : "shadow",
         disabled ? "disabled" : "",
+        size
     ].join(" ");
     const startIconElement = startIcon ? (
         <span className="material-icons start">{startIcon}</span>
