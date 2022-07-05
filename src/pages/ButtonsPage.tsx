@@ -12,6 +12,10 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
             <Button variant="outlined">Outlined</Button>
             <Button variant="text">Text</Button>
             <Button disableShadow>Shadowless</Button>
+            <div className="row g-2">
+                <Button disabled>Disabled</Button>
+                <Button variant="text" disabled>Disabled</Button>
+            </div>
         </div>
     );
 }

@@ -2,10 +2,11 @@ import React from "react";
 import { ButtonProps } from "./Button.model";
 import './Button.scss';
 
-const Button = ({ children, variant="default", disableShadow }: React.PropsWithChildren<ButtonProps>) => {
+const Button = ({ children, variant="default", disableShadow, disabled }: React.PropsWithChildren<ButtonProps>) => {
     const finalClassname = [
         variant,
-        disableShadow ? "" : "shadow"
+        disableShadow ? "" : "shadow",
+        disabled ? "disabled" : "",
     ].join(" ");
     return (
         <button className={finalClassname}>
