@@ -11,6 +11,7 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
             <Button>Default</Button>
             <Button variant="outlined">Outlined</Button>
             <Button variant="text">Text</Button>
+            <Button disableShadow>Shadowless</Button>
         </div>
     );
 }
