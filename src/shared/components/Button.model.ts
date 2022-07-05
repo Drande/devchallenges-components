@@ -1,4 +1,4 @@
-export interface ButtonProps {
+export interface ButtonProps extends Partial<React.HTMLAttributes<HTMLButtonElement>>  {
     variant?: ButtonVariant;
     disableShadow?: boolean;
     disabled?: boolean;

@@ -16,3 +16,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.code {
+  font-size: 12px;
+  color: gray;
+  font-style: italic;
+}
+
+.section {
+  box-shadow: 0 0 3px gray;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
