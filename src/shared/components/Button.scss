@@ -37,6 +37,8 @@
 }
 
 button {
+    display: flex;
+    align-items: center;
     /* Default/Layout values */
     font-family: inherit;
     padding: 8px 16px;
