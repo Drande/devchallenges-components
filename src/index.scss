@@ -1,15 +1,6 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-.row { display: flex; flex-direction: row; }
-.column { display:  flex; flex-direction: column; }
-.flex-wrap { flex-wrap: wrap; }
-@for $count from 1 to 12 {
-  .g-#{$count} { gap: $count * 0.5rem; }
-  .p-#{$count} { padding: $count * 0.5rem; }
-}
-.align-items-end { align-items: flex-end; }
+@use '/src/shared/styles/utility.scss';
+@use '/src/shared/styles/reset.scss';
+@use '/src/shared/styles/themes/light.scss';
 
 
 body {

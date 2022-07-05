@@ -32,6 +32,12 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
                 <Button size="md">Medium</Button>
                 <Button size="lg">Large</Button>
             </div>
+            <div className="row g-2 flex-wrap">
+                <Button color="default">Default</Button>
+                <Button color="primary">Primary</Button>
+                <Button color="secondary">Secondary</Button>
+                <Button color="danger">Danger</Button>
+            </div>
         </div>
     );
 }

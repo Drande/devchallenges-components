@@ -5,10 +5,12 @@ export interface ButtonProps {
     startIcon?: Icon;
     endIcon?: Icon;
     size?: Sizes;
+    color?: ThemeColor;
 }
 
 type ButtonVariant = "default" | "text" | "outlined";
 type Sizes = "sm" | "md" | "lg";
+type ThemeColor = "default" | "primary" | "secondary" | "danger";
 
 type Icon = keyof IMaterialIcons;
 

@@ -1,42 +1,59 @@
 button {
+
+    /* Default/Layout values */
     font-family: inherit;
     padding: 8px 16px;
     font-size: 14px;
     line-height: 20px;
     border-radius: 6px;
-    background-color: #E0E0E0;
     border: none;
     width: min-content;
     height: min-content;
-    color: #3F3F3F;
+
+    /* Colors */
+    color: var(--color-default-text);
+    --btn-bg-color: var(--color-default);
+    &.primary { --btn-bg-color: var(--color-primary); color: var(--color-primary-text); }
+    &.secondary { --btn-bg-color: var(--color-secondary); color: var(--color-secondary-text); }
+    &.danger { --btn-bg-color: var(--color-danger); color: var(--color-danger-text); }
     white-space: nowrap;
-    &.sm { padding: 6px 14px; }
-    &.md { padding: 8px 16px; }
-    &.lg { padding: 11px 22px; }
-    .material-icons {
-        font-size: 14px;
-        vertical-align: middle;
-    }
-    .start {
-        margin-right: 8px;
-    }
-    .end {
-        margin-left: 8px;
-    }
+    background-color: var(--btn-bg-color);
+
+    /* Shadow */
+
     &.shadow {
         box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     }
-    &.disabled {
-        color: #9E9E9E;
-    }
+
+    /* Sizes */
+    &.sm { padding: 6px 14px; }
+    &.md { padding: 8px 16px; }
+    &.lg { padding: 11px 22px; }
+
+    /* Variants */
     &.outlined {
         &.md { padding: 6px 14px; }
         &.sm { padding: 4px 12px; }
         &.lg { padding: 9px 20px; }
-        border: 1px solid #3F3F3F;
+        border: 1px solid var(--btn-bg-color);
     }
+
     &.text {
         background-color: transparent;
         box-shadow: none;
+    }
+
+    /* Icons */
+    .material-icons {
+        font-size: 14px;
+        vertical-align: middle;
+    }
+    .start { margin-right: 8px; }
+    .end { margin-left: 8px; }
+
+    /* States */
+
+    &.disabled {
+        color: #9E9E9E;
     }
 }
