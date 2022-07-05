@@ -1,8 +1,3 @@
-/* Reset */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 /* Utility */
 
 .row { display: flex; flex-direction: row; }
@@ -13,4 +8,3 @@
 .p-#{$count} { padding: $count * 0.5rem; }
 }
 .align-items-end { align-items: flex-end; }
-  

@@ -9,13 +9,15 @@ button {
     border: none;
     width: min-content;
     height: min-content;
+    cursor: pointer;
 
     /* Colors */
+    --btn-color-hover: var(--color-default-hover);
     color: var(--color-default-text);
     --btn-bg-color: var(--color-default);
-    &.primary { --btn-bg-color: var(--color-primary); color: var(--color-primary-text); }
-    &.secondary { --btn-bg-color: var(--color-secondary); color: var(--color-secondary-text); }
-    &.danger { --btn-bg-color: var(--color-danger); color: var(--color-danger-text); }
+    &.primary { --btn-bg-color: var(--color-primary); color: var(--color-primary-text); --btn-color-hover: var(--color-primary-hover);  }
+    &.secondary { --btn-bg-color: var(--color-secondary); color: var(--color-secondary-text); --btn-color-hover: var(--color-secondary-hover);  }
+    &.danger { --btn-bg-color: var(--color-danger); color: var(--color-danger-text); --btn-color-hover: var(--color-danger-hover);  }
     white-space: nowrap;
     background-color: var(--btn-bg-color);
 
@@ -55,5 +57,9 @@ button {
 
     &.disabled {
         color: #9E9E9E;
+    }
+
+    &:hover, :focus {
+        background-color: var(--btn-color-hover);
     }
 }
