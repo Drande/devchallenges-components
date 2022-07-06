@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: 240px;
+    background-color: #FAFBFD;
+    min-height: 100vh;
+    padding: 3rem;
+    gap: 30px;
+    a {
+        text-decoration: none;
+        color: #9E9E9E;
+        &.active {
+            color: #090F31;
+        }
+    }
+}

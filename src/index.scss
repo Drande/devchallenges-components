@@ -32,3 +32,18 @@ code {
 .credits {
   color: #A9A9A9;
 }
+
+.footer {
+  height: 80px;
+  padding: 2rem;
+}
+
+.router-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
