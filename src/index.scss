@@ -13,11 +13,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 12px;
   color: gray;
   font-style: italic;
@@ -27,4 +27,8 @@ code {
   box-shadow: 0 0 3px gray;
   padding: 0.5rem;
   border-radius: 6px;
+}
+
+.credits {
+  color: #A9A9A9;
 }

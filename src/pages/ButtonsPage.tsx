@@ -234,6 +234,7 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
                 </div>
                 {<span>You have done {count} actions</span>}
             </div>
+            <footer className="credits">created by <b><u>Drande</u></b> - devChallenges.io</footer>
         </div>
     );
 }
