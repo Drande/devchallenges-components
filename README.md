@@ -17,7 +17,11 @@
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
-      Challenge
+      Buttons Challenge
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp">
+      Inputs Challenge
     </a>
   </h3>
 </div>
@@ -49,7 +53,8 @@ This is my first frontend app for completing a devchallenges.io challenge i foun
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge.
+The [buttons-challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) and [inputs-challenge](https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp) was to build an application to complete the given user stories.
 
 ## How To Use
 
