@@ -203,6 +203,7 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
                     <Button color="primary" startIcon="favorite">Favorite</Button>
                 </div>
             </div>
+            <h5>Sizes</h5>
             <div className="row g-2 flex-wrap section align-items-end">
                 <div className="column g-1">
                     <span className="code">{'color="primary" size="sm"'}</span>
@@ -215,6 +216,18 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
                 <div className="column g-1">
                     <span className="code">{'color="primary" size="lg"'}</span>
                     <Button color="primary" size="lg">Large</Button>
+                </div>
+                <div className="column g-1">
+                    <span className="code">{'color="primary" size="sm"'}</span>
+                    <Button color="primary" size="sm" startIcon="settings">Small</Button>
+                </div>
+                <div className="column g-1">
+                    <span className="code">{'color="primary" size="md"'}</span>
+                    <Button color="primary" size="md" startIcon="settings" endIcon="cloud">Medium</Button>
+                </div>
+                <div className="column g-1">
+                    <span className="code">{'color="primary" size="lg"'}</span>
+                    <Button color="primary" size="lg" endIcon="cloud">Large</Button>
                 </div>
             </div>
 

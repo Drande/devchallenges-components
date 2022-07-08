@@ -12,10 +12,10 @@ const Button = ({ children, variant="default", disableShadow, disabled, startIco
         color
     ].filter(c => c).join(" ");
     const startIconElement = startIcon ? (
-        <span className="material-icons start">{startIcon}</span>
+        <span className={"material-icons start".concat(size?" "+size:"")}>{startIcon}</span>
     ):"";
     const endIconElement = endIcon ? (
-        <span className="material-icons end">{endIcon}</span>
+        <span className={"material-icons end".concat(size?" "+size:"")}>{endIcon}</span>
     ):"";
     return (
         <button {...props} className={finalClassname} disabled={isDisabled}>
