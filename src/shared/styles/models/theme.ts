@@ -1,1 +1,3 @@
-export type ThemeColor = "default" | "primary" | "secondary" | "danger";
+export type ThemeColor =  "primary" | "secondary";
+
+export type AuxColors = "default" | "danger";

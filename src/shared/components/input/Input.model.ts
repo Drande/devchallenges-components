@@ -1,5 +1,6 @@
 import { Icon } from "../../styles/models/icon";
 import { Sizes } from "../../styles/models/size";
+import { ThemeColor } from "../../styles/models/theme";
 
 export interface InputProps extends Partial<React.HTMLAttributes<HTMLInputElement | HTMLTextAreaElement>>  {
     type?: string;
@@ -14,4 +15,5 @@ export interface InputProps extends Partial<React.HTMLAttributes<HTMLInputElemen
     fullWidth?: boolean;
     multiline?: boolean;
     rows?: number;
+    color?: ThemeColor;
 }

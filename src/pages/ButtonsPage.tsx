@@ -16,9 +16,7 @@ const ButtonsPage: FunctionComponent<ButtonsPageProps> = () => {
     return (
         <div className="column g-2 p-4">
             <h1>Buttons</h1>
-            
-            <h3>Variants</h3>
-            <h5>Default</h5>
+            <h5>Colors</h5>
             <div className="row g-2 flex-wrap section">
                 <div className="column g-1">
                     <span className="code">{'variant="default" color="default"'}</span>

@@ -2,7 +2,7 @@ import React from "react";
 import './Input.scss';
 import { InputProps } from "./Input.model";
 
-const Input = ({ label="Label", helperText, type="text", placeholder="Placeholder", error, disabled, startIcon, endIcon, size="md", fullWidth, multiline, rows=4, ...props }: React.PropsWithChildren<InputProps>) => {
+const Input = ({ color, label="Label", helperText, type="text", placeholder="Placeholder", error, disabled, startIcon, endIcon, size="md", fullWidth, multiline, rows=4, ...props }: React.PropsWithChildren<InputProps>) => {
     const isInvalid: boolean = error!==undefined && error!==false;
     const isDisabled: boolean = disabled!==undefined && disabled!==false;
     const finalClassname = [
@@ -11,6 +11,7 @@ const Input = ({ label="Label", helperText, type="text", placeholder="Placeholde
         isDisabled ? "disabled" : undefined,
         fullWidth ? "expanded" : undefined,
         size,
+        color
     ].filter(c => c).join(" ");
     let inputElement;
     let startIconElement;

@@ -1,6 +1,6 @@
 import { Icon } from "../../styles/models/icon";
 import { Sizes } from "../../styles/models/size";
-import { ThemeColor } from "../../styles/models/theme";
+import { AuxColors, ThemeColor } from "../../styles/models/theme";
 
 export interface ButtonProps extends Partial<React.HTMLAttributes<HTMLButtonElement>>  {
     variant?: ButtonVariant;
@@ -9,7 +9,7 @@ export interface ButtonProps extends Partial<React.HTMLAttributes<HTMLButtonElem
     startIcon?: Icon;
     endIcon?: Icon;
     size?: Sizes;
-    color?: ThemeColor;
+    color?: ThemeColor | AuxColors;
 }
 
 type ButtonVariant = "default" | "text" | "outlined";

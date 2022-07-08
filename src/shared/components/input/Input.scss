@@ -7,12 +7,43 @@
     .end { right: $px; & ~ input { padding-right: 4*$px; } }
 }
 
-.input-wrapper {
-    textarea {
-        border-radius: 8px;
-        resize: none;
-        overflow: hidden;
+@mixin input-theme($name, $color, $text, $hover, $disabled) {
+    &.#{$name} {
+        &.disabled {
+            color: rgb(var($text));
+            label, .helper-text {
+                color: rgb(var($color));
+            }
+            input, textarea {
+                &:disabled {
+                    background-color: rgba(var($disabled), 0.1);
+                    border: 1px solid rgba(var($hover), 0.1);
+                    &:hover, &:focus, &:focus-visible {
+                        outline: none;
+                        border: 1px solid rgba(var($hover), 0.1);
+                    }
+                }
+            }
+        }
+        label, .helper-text {
+            color: rgb(var($color));
+        }
+        input, textarea {
+            color: rgb(var($text));
+            border: 1px solid rgb(var($color));
+            &:hover, &:focus, &:focus-visible {
+                outline: none;
+                border: 1px solid rgb(var($hover));
+            }
+        }
     }
+}
+
+.input-wrapper {
+    /* Colors */
+    @include input-theme("primary", --color-primary, --color-gray-3, --color-primary-hover, --color-primary);
+    @include input-theme("secondary", --color-secondary, --color-gray-3, --color-secondary-hover, --color-secondary);
+
     /* Adjust width to 100% */
     &.expanded {
         width: 100%;
@@ -40,13 +71,14 @@
     &.md { @include input-size(14px, 20px, 16px, 12px) }
     &.lg { @include input-size(18px, 24px, 20px, 16px) }
 
-    input {
-        display: inline;
-        min-width: 200px;
-        width: min-content;
-        height: min-content;
+    textarea {
+        resize: none;
+        overflow: hidden;
+    }
+    input, textarea {
+        outline: none;
+        font-family: inherit;
         border-radius: 8px;
-        padding: 16px 12px;
         font-size: inherit;
         line-height: inherit;
         font-weight: 500;
@@ -56,6 +88,13 @@
             outline: none;
             border: 1px solid #333333;
         }
+        display: inline;
+        padding: 16px 12px;
+    }
+    input {
+        min-width: 200px;
+        width: min-content;
+        height: min-content;
     }
     label {
         display: block;
@@ -71,14 +110,14 @@
     /* Invalid state */
     &.invalid {
         color: rgb(var(--color-danger));
-        input {
+        input, textarea {
             border: 1px solid rgb(var(--color-danger));
             &:hover, &:focus, &:focus-visible {
                 outline: none;
-                border: 1px solid rgb(var(--color-danger));
+                border: 1px solid rgb(var(--color-danger-hover));
             }
         }
-        .helper-text {
+        label, .helper-text {
             color: rgb(var(--color-danger));
         }
     }
@@ -90,7 +129,7 @@
         label, .helper-text {
             color: #828282;
         }
-        input {
+        input, textarea {
             &:disabled {
                 background: #F2F2F2;
                 border: 1px solid #E0E0E0;
