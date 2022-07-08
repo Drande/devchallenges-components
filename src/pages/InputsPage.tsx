@@ -59,6 +59,33 @@ const InputsPage: FunctionComponent<InputsPageProps> = () => {
                     <Input endIcon="home" disabled></Input>
                 </div>
             </div>
+
+            <div className="row g-2 flex-wrap section align-items-end">
+                <div className="column g-1">
+                    <span className="code"></span>
+                    <Input size="sm"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code"></span>
+                    <Input size="md"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code"></span>
+                    <Input size="lg"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code"></span>
+                    <Input size="sm" startIcon="cloud"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code"></span>
+                    <Input size="md" endIcon="cloud"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code"></span>
+                    <Input size="lg" startIcon="cloud" endIcon="cloud"></Input>
+                </div>
+            </div>
         </div>
     );
 }

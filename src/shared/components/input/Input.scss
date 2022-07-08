@@ -1,4 +1,13 @@
+@mixin input-size($size, $line, $py, $px) {
+    input { font-size: $size; line-height: $line; padding: $py $px; }
+    .input-icon { top: $py; }
+    .material-icons { font-size: ($line + 4px); }
+    .start { left: $px; & ~ input { padding-left: 4*$px; } }
+    .end { right: $px; & ~ input { padding-right: 4*$px; } }
+}
+
 .input-wrapper {
+
     /* layout */
     display: flex;
     flex-direction: column;
@@ -10,15 +19,21 @@
 
     /* Default values */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+    &.sm { @include input-size(10px, 16px, 12px, 8px) }
+    &.md { @include input-size(14px, 20px, 16px, 12px) }
+    &.lg { @include input-size(18px, 24px, 20px, 16px) }
+
     input {
         display: inline;
         min-width: 200px;
         width: min-content;
-        min-height: 56px;
+        height: min-content;
         border-radius: 8px;
         padding: 16px 12px;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: inherit;
+        line-height: inherit;
         font-weight: 500;
         color: #828282;
         border: 1px solid #828282;
@@ -72,22 +87,25 @@
         }
     }
 
+    
+    /* Icons */
     .input-icon {
         top: 16px;
         position: absolute;
-
     }
+    
+    .material-icons {
+        font-size: 24px;
+        vertical-align: middle;
+    }
+    
     .start {
         left: 12px;
-        & ~ input {
-            padding-left: 48px;
-        }
+        & ~ input { padding-left: 48px; }
     }
     .end {
         right: 12px;
-        & ~ input {
-            padding-right: 48px;
-        }
+        & ~ input { padding-right: 48px; }
     }
 }
 

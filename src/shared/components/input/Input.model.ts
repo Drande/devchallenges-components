@@ -1,4 +1,5 @@
 import { Icon } from "../../styles/models/icon";
+import { Sizes } from "../../styles/models/size";
 
 export interface InputProps extends Partial<React.HTMLAttributes<HTMLInputElement>>  {
     type?: string;
@@ -9,4 +10,5 @@ export interface InputProps extends Partial<React.HTMLAttributes<HTMLInputElemen
     helperText?: string;
     startIcon?: Icon;
     endIcon?: Icon;
+    size?: Sizes;
 }
