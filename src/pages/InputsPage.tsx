@@ -62,27 +62,27 @@ const InputsPage: FunctionComponent<InputsPageProps> = () => {
 
             <div className="row g-2 flex-wrap section align-items-end">
                 <div className="column g-1">
-                    <span className="code"></span>
+                    <span className="code">size="sm"</span>
                     <Input size="sm"></Input>
                 </div>
                 <div className="column g-1">
-                    <span className="code"></span>
+                    <span className="code">size="md"</span>
                     <Input size="md"></Input>
                 </div>
                 <div className="column g-1">
-                    <span className="code"></span>
+                    <span className="code">size="lg"</span>
                     <Input size="lg"></Input>
                 </div>
                 <div className="column g-1">
-                    <span className="code"></span>
+                    <span className="code">size="sm" startIcon="cloud"</span>
                     <Input size="sm" startIcon="cloud"></Input>
                 </div>
                 <div className="column g-1">
-                    <span className="code"></span>
+                    <span className="code">size="md" endIcon="cloud"</span>
                     <Input size="md" endIcon="cloud"></Input>
                 </div>
                 <div className="column g-1">
-                    <span className="code"></span>
+                    <span className="code">size="lg" startIcon="cloud" endIcon="cloud"</span>
                     <Input size="lg" startIcon="cloud" endIcon="cloud"></Input>
                 </div>
             </div>
@@ -90,8 +90,30 @@ const InputsPage: FunctionComponent<InputsPageProps> = () => {
             
             <div className="row g-2 flex-wrap section align-items-end">
                 <div className="column g-1 w-full">
-                    <span className="code"></span>
-                    <Input fullWidth={true}></Input>
+                    <span className="code">fullWidth</span>
+                    <Input fullWidth></Input>
+                </div>
+            </div>
+
+            <div className="row g-2 flex-wrap section align-items-end">
+                <div className="column g-1">
+                    <span className="code">multiline size="sm"</span>
+                    <Input multiline size="sm"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code">multiline size="md"</span>
+                    <Input multiline size="md"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code">multiline size="lg"</span>
+                    <Input multiline size="lg"></Input>
+                </div>
+            </div>
+            
+            <div className="row g-2 flex-wrap section align-items-end">
+                <div className="column g-1 w-full">
+                    <span className="code">multiline fullWidth</span>
+                    <Input multiline fullWidth></Input>
                 </div>
             </div>
         </div>

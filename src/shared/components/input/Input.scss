@@ -1,5 +1,6 @@
 @mixin input-size($size, $line, $py, $px) {
     input { font-size: $size; line-height: $line; padding: $py $px; }
+    textarea { font-size: $size; line-height: $line; padding: $py $px; }
     .input-icon { top: $py; }
     .material-icons { font-size: ($line + 4px); }
     .start { left: $px; & ~ input { padding-left: 4*$px; } }
@@ -7,12 +8,17 @@
 }
 
 .input-wrapper {
+    textarea {
+        border-radius: 8px;
+        resize: none;
+        overflow: hidden;
+    }
     /* Adjust width to 100% */
     &.expanded {
         width: 100%;
         .field-wrapper {
             width: 100%;
-            input {
+            input, textarea {
                 width: 100%;
             }
         }
