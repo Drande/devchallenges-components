@@ -86,6 +86,14 @@ const InputsPage: FunctionComponent<InputsPageProps> = () => {
                     <Input size="lg" startIcon="cloud" endIcon="cloud"></Input>
                 </div>
             </div>
+
+            
+            <div className="row g-2 flex-wrap section align-items-end">
+                <div className="column g-1 w-full">
+                    <span className="code"></span>
+                    <Input fullWidth={true}></Input>
+                </div>
+            </div>
         </div>
     );
 }

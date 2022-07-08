@@ -11,4 +11,5 @@ export interface InputProps extends Partial<React.HTMLAttributes<HTMLInputElemen
     startIcon?: Icon;
     endIcon?: Icon;
     size?: Sizes;
+    fullWidth?: boolean;
 }
