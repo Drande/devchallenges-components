@@ -1,3 +1,6 @@
+import { Icon } from "../../styles/models/icon";
+import { ThemeColor } from "../../styles/models/theme";
+
 export interface ButtonProps extends Partial<React.HTMLAttributes<HTMLButtonElement>>  {
     variant?: ButtonVariant;
     disableShadow?: boolean;
@@ -10,14 +13,3 @@ export interface ButtonProps extends Partial<React.HTMLAttributes<HTMLButtonElem
 
 type ButtonVariant = "default" | "text" | "outlined";
 type Sizes = "sm" | "md" | "lg";
-type ThemeColor = "default" | "primary" | "secondary" | "danger";
-
-type Icon = keyof IMaterialIcons;
-
-interface IMaterialIcons {
-    cloud: string;
-    home: string;
-    search: string;
-    settings: string;
-    favorite: string;
-}

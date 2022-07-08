@@ -4,10 +4,14 @@
     flex-direction: column;
     gap: 4px;
     
+    .field-wrapper {
+        position: relative;
+    }
+
     /* Default values */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     input {
-        display: block;
+        display: inline;
         min-width: 200px;
         width: min-content;
         min-height: 56px;
@@ -52,6 +56,7 @@
     /* Disabled has priority over invalid */
     &.disabled {
         pointer-events: none;
+        color: #828282;
         label, .helper-text {
             color: #828282;
         }
@@ -64,6 +69,24 @@
                     border: 1px solid #E0E0E0;
                 }
             }
+        }
+    }
+
+    .input-icon {
+        top: 16px;
+        position: absolute;
+
+    }
+    .start {
+        left: 12px;
+        & ~ input {
+            padding-left: 48px;
+        }
+    }
+    .end {
+        right: 12px;
+        & ~ input {
+            padding-right: 48px;
         }
     }
 }

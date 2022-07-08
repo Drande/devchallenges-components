@@ -1,0 +1,1 @@
+export type ThemeColor = "default" | "primary" | "secondary" | "danger";
