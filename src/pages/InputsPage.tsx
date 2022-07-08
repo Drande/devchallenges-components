@@ -21,6 +21,12 @@ const InputsPage: FunctionComponent<InputsPageProps> = () => {
                     <Input error></Input>
                 </div>
             </div>
+            <div className="row g-2 flex-wrap section">
+                <div className="column g-1">
+                    <span className="code">disabled</span>
+                    <Input disabled></Input>
+                </div>
+            </div>
         </div>
     );
 }
