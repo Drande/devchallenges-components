@@ -4,4 +4,5 @@ export interface InputProps extends Partial<React.HTMLAttributes<HTMLInputElemen
     placeholder?: string;
     error?: boolean;
     disabled?: boolean;
+    helperText?: string;
 }

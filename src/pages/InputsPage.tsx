@@ -27,6 +27,20 @@ const InputsPage: FunctionComponent<InputsPageProps> = () => {
                     <Input disabled></Input>
                 </div>
             </div>
+            <div className="row g-2 flex-wrap section">
+                <div className="column g-1">
+                    <span className="code">helperText="Some interesting text"</span>
+                    <Input helperText="Some interesting text"></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code">helperText="Some interesting text" error</span>
+                    <Input helperText="Some interesting text" error></Input>
+                </div>
+                <div className="column g-1">
+                    <span className="code">helperText="Some interesting text" disabled</span>
+                    <Input helperText="Some interesting text" disabled></Input>
+                </div>
+            </div>
         </div>
     );
 }
