@@ -1,0 +1,31 @@
+input {
+    display: block;
+    min-width: 200px;
+    width: min-content;
+    min-height: 56px;
+    border-radius: 8px;
+    padding: 16px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #828282;
+    border: 1px solid #828282;
+    margin-top: 4px;
+}
+
+label {
+    &.invalid {
+        color: rgb(var(--color-danger));
+        input {
+            border: 1px solid rgb(var(--color-danger));
+            &:hover, &:focus, &:focus-visible {
+                outline: none;
+                border: 1px solid rgb(var(--color-danger));
+            }
+        }
+    }
+    display: block;
+    line-height: 17px;
+    font-size: 12px;
+}
